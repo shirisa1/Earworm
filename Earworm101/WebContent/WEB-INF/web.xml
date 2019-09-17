@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Earworm101</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- <servlet>
+    <servlet-name>HttpDemo</servlet-name>
+    <servlet-class>com.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HttpDemo</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping> -->
+  <servlet>
+    <servlet-name>adminwelcome</servlet-name>
+    <servlet-class>com.controller.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminwelcome</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+ <!--  <servlet>
+    <servlet-name>Servlet3</servlet-name>
+    <servlet-class>com.controller.Servlet3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet3</servlet-name>
+    <url-pattern>/servlet3</url-pattern>
+  </servlet-mapping> -->
+<!--   <servlet>
+    <servlet-name>Shopper</servlet-name>
+    <servlet-class>com.controller.Shopper</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Shopper</servlet-name>
+    <url-pattern>/shop</url-pattern>
+  </servlet-mapping> -->
+<!--   <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.controller.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping> -->
+</web-app>
