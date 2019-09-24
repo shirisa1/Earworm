@@ -96,21 +96,13 @@
 									<!-- Login/Register -->
 									<li><a href="#"><%= session.getAttribute("username") %></a>
 										<ul class="dropdown">
+											<li><a href="cart.jsp">MyCart</a></li>
 											<li><a href="logoutServlet">Logout</a></li>
 										</ul></li>
+									<li><a href="cart.jsp">Cart<span class="icon-shopping-cart"></span></a></li>	
 
 								</ul>
 
-								<!-- Login/Register & Cart Button -->
-								<div
-									class="login-register-cart-button d-flex align-items-center">
-
-									<!-- Cart Button -->
-									<div class="cart-btn">
-										<p>
-											<a href="cart.jsp"> <span class="icon-shopping-cart"></span></a> 
-									</div>
-								</div>
 							</div>
 							<!-- Nav End -->
 
@@ -175,7 +167,7 @@
 				<div
 					class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
 					<div class="single-album">
-						<img src="img/bg-img/a1.jpg" alt="">
+						<img src="img/bg-img/piano.jpg" alt="">
 						<div class="album-info">
 							<a href="#">
 								<h5>Piano</h5>
@@ -202,7 +194,30 @@
 						</div>
 					</div>
 				</div>
+<!-- Single Album -->
+				<div
+					class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
+					<div class="single-album">
+						<img src="img/bg-img/a1.jpg" alt="">
+						<div class="album-info">
+							<a href="#">
+								<h5>Piano</h5>
+							</a>
+							<p>Piano white</p>
+							<p>$5000.00</p>
+							<!-- Cart Button -->
+							<div class="play=icon">
+								<p>
+									<a href="productDisplay" class="video--play--btn"><span
+										class="icon-shopping-cart"></span> </a>
+									<!-- <span class="quantity">1</span> -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<!-- Single Album -->
 				<!-- Single Album -->
 				<div
 					class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item s e q">
@@ -218,7 +233,7 @@
 							<div class="play=icon">
 								<p>
 								
-									<a href="productDisplay" class="video--play--btn"><span
+									<a href="productDisplay1.jsp" class="video--play--btn"><span
 										class="icon-shopping-cart" onClick="clickEvent" ></span> </a>
 									<!-- <span class="quantity">1</span> -->
 								</p>
@@ -459,21 +474,21 @@
 	</section>
 	<!-- ##### Album Catagory Area End ##### -->
 
-	<!-- ##### Buy Now Area Start ##### -->
+	<!-- <!-- ##### Buy Now Area Start #####
 	<div class="oneMusic-buy-now-area mb-100">
 		<div class="container">
 			<div class="row">
 
-				<!-- Single Album Area -->
+				Single Album Area
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="single-album-area">
 						<div class="album-thumb">
 							<img src="img/bg-img/b1.jpg" alt="">
-							<!-- Album Price -->
+							Album Price
 							<div class="album-price">
 								<p>$0.90</p>
 							</div>
-							<!-- Play Icon -->
+							Play Icon
 							<div class="play-icon">
 								<a href="#" class="video--play--btn"><span
 									class="icon-play-button"></span></a>
@@ -488,7 +503,7 @@
 					</div>
 				</div>
 
-				<!-- Single Album Area -->
+				Single Album Area
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="single-album-area">
 						<div class="album-thumb">
@@ -503,7 +518,7 @@
 					</div>
 				</div>
 
-				<!-- Single Album Area -->
+				Single Album Area
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="single-album-area">
 						<div class="album-thumb">
@@ -518,7 +533,7 @@
 					</div>
 				</div>
 
-				<!-- Single Album Area -->
+				Single Album Area
 				<div class="col-12 col-sm-6 col-md-3">
 					<div class="single-album-area">
 						<div class="album-thumb">
@@ -545,10 +560,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- ##### Buy Now Area End ##### -->
+	##### Buy Now Area End #####
 
-	<!-- ##### Add Area Start ##### -->
-	<!--     <div class="add-area mb-100">
+	##### Add Area Start #####
+	    <div class="add-area mb-100">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -558,13 +573,13 @@
                 </div>
             </div>
         </div>
-    </div> -->
-	<!-- ##### Add Area End ##### -->
+    </div>
+	##### Add Area End #####
 
 
 
-	<!-- ##### Contact Area Start ##### -->
-	<!--     <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+	##### Contact Area Start #####
+	    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -610,9 +625,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
-	<!-- ##### Contact Area End ##### -->
-
+    </section>
+	##### Contact Area End #####
+ --> -->
 	<!-- ##### Footer Area Start ##### -->
 	<footer class="footer-area">
 		<div class="container">

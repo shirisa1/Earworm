@@ -27,7 +27,7 @@ public class CartController extends HttpServlet {
 		HttpSession session = req.getSession(false);
 		String name = (String) session.getAttribute("username");
 		
-		requestDispatcher = req.getRequestDispatcher("/cart.jsp");
+		requestDispatcher = req.getRequestDispatcher("/cartSuccess.jsp");
 		requestDispatcher.include(req, resp);
 	}
 

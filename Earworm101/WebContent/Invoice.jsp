@@ -36,6 +36,15 @@
 	<!-- ##### Header Area End ##### -->
 
 
+	<!-- ##### Breadcumb Area Start ##### -->
+	<section class="breadcumb-area bg-img bg-overlay"
+		style="background-image: url(img/bg-img/breadcumb3.jpg);">
+		<div class="bradcumbContent">
+
+			<h2>Checkout</h2>
+			
+		</div>
+	</section>
 	<!-- ##### Breadcumb Area End ##### -->
 
 	<!-- ##### Register Area Start ##### -->
@@ -44,26 +53,28 @@
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-8">
 					<div class="login-content">
-						<h3>
-							Hi,<%=session.getAttribute("username") %></h3>
-						<p>Please fill out your shipping information</p>
+						
+						<h4>Enter your shipping information</h4>-------------------------------------<br><br>
 						<!-- Login Form -->
 						<div class="login-form">
 
 							<form action="invoice" method="post">
 
-								<input type="email" name="email" class="form-control"
-									id="exampleInputEmail1" placeholder="Enter your email">
-								<br> <input type="number" name="phone" class="form-control"
-									placeholder="Enter your phonenumber"> <br> <br>
-								<input required type="text" name="creditcard"
-									class="form-control" placeholder="Enter your mailing address"><br>
-
-								<br> <input required type="text" name="creditcard"
-									class="form-control" placeholder="Enter your card number">
-								<label for="start">Expiry date:</label> <input type="date" class="form-control" id="start"name="expdate" value="2018-07-22" min="2018-01-01"
-									max="2018-12-31"> 
-								<br> <input required type="password" name="pin" class="form-control"placeholder="Enter your CVV"><br> <br>
+								<a>Enter your email: <input type="email" name="email" 
+									id="exampleInputEmail1" placeholder="abc@google.com"></a>
+									<br>
+								<br> <a>Enter your phone: <input type="number" name="phone"
+									placeholder="607 304 0913"></a> <br><br>
+									
+								<a>Enter your mailing address: <input required type="text" name="creditcard"
+									 placeholder="100 Rotary Ave, NY,NY"></a><br><br><br>
+								<h4>Enter your card information</h4>
+								-------------------------------------<br>
+								<br> Card No:<input required type="number" name="creditcard"
+									 placeholder="Enter your card number">
+								<label for="start"></label> Expiry Date:<input type="date"  id="start"name="expdate" value="2018-07-22" min="2018-01-01"
+									max="2018-12-31"> <br>
+								<br> CVV:<input required type="password" name="pin" placeholder="Enter your CVV"><br> <br>
 								<button type="submit" class="btn oneMusic-btn mt-30">Pay</button>
 
 							</form>

@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -32,12 +34,11 @@ public class LoginServlet extends HttpServlet{
 		
 		String nameString = req.getParameter("name");
 		String password = req.getParameter("password");
-		/*
-		 Cookie ck =new Cookie("name",nameString);//creating cookie object  
-		    resp.addCookie(ck);//adding cookie in the response
-		 */
+		List<String> product = new ArrayList<String>();
+		
 		  HttpSession session=req.getSession();  
-	      session.setAttribute("username",nameString);     
+	      session.setAttribute("username",nameString); 
+	      session.setAttribute("products", product);
 		    
 		//from database
 		String UserNameString = null;

@@ -213,3 +213,15 @@
     })
 
 })(jQuery);
+
+
+$(document).ready(function () {
+$("#wasted1").click(() => {
+$('#modifyMe2').remove();
+});
+});
+$(document).ready(function () {
+	$("#wasted0").click(() => {
+	$('#modifyMe1').remove();
+	});
+	});

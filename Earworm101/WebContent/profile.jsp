@@ -156,10 +156,10 @@
                             
 								<form action="servlet3" method="post">
 
-									<input type="text" name="firstname" class="form-control"
+									<input required type="text" name="firstname" class="form-control"
 										placeholder="Enter your first name"> <br>
-									<input type="text" name="lastname" class="form-control"
-										placeholder="Enter your last name"> <br> <input
+									<input required type="text" name="lastname" class="form-control"
+										placeholder="Enter your last name"> <br> <input required
 										type="email" name="email" class="form-control"
 										id="exampleInputEmail1" placeholder="Enter your email">
 

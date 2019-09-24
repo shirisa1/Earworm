@@ -31,7 +31,7 @@
 			<div class="row align-items-end">
 				<div class="col-12 col-md-5 col-lg-4">
 					<div class="featured-artist-thumb">
-						<img src="img/bg-img/piano.jpg" alt="">
+						<img src="img/bg-img/a5.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-12 col-md-7 col-lg-8">
@@ -39,8 +39,8 @@
 						<!-- Section Heading -->
 						<div class="section-heading white text-left mb-30">
 
-							<h2><%=session.getAttribute("productName") %></h2>
-							<p><%=session.getAttribute("price")%></p>
+							<h2>ElectricGuitar</h2>
+							<p>$2500.00</p>
 						</div>
 						<p>Nam tristique ex vel magna tincidunt, ut porta nisl
 							finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo
@@ -51,15 +51,13 @@
 						<div>
 							<form action="addToCart" method="post">
 							<%
-							String pString= (String)session.getAttribute("productName");
+							String pString= "Sound Electric Guitar";
 							List<String> product = (List<String>)session.getAttribute("products");
 							 product.add(pString);
-						     session.setAttribute("p0","Grand Piano");
-						     session.setAttribute("pr0","5000.00");
-						     
-						    
+							 double p1= 2500.00;
+						     session.setAttribute("p1","Sound Electric Guitar");
+						     session.setAttribute("pr1",p1 );
 							%>
-			
 
 								<button type="submit" class="btn oneMusic-btn mt-30">Add
 									to cart</button>
